@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Profile Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1e0536;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .card {
+            display: flex;
+            background: linear-gradient(135deg, #ff4e50, #f9d423);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 800px;
+            max-width: 90%;
+        }
+
+        .left-site, .right-site {
+            padding: 30px;
+            background-color: #282828;
+            border-radius: 15px;
+            color: white;
+        }
+
+        .left-site {
+            width: 40%;
+            text-align: center;
+            margin: 15px;
+        }
+
+        .right-site {
+            width: 60%;
+            margin: 15px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #fff;
+            object-fit: cover;
+        }
+
+        h2, h3 {
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #ff4e50;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #f9d423;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        
+
+        .heart {
+            color: red;
+        }
+        
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #555;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s;
+        }
+
+        .social-link:hover {
+            background-color: #2f8adf;
+        }
+
+        .social-link i {
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left-site">
+                <img src="image/Arefin.jpg" alt="Profile Picture" class="profile-pic">
+                <h2> Azharul Islam</h2>
+                <h3> Web Developer </h3>
+            </div>
+
+            <div class="right-site">
+                <h2> Profile Details </h2> <hr> 
+                <p> Name : <span> Azharul Islam </span></p>
+                <p> Age : <span> 23</p>
+                <p> Mobile : <span> +880 XXXXXXXXXX </span></p>
+                <p> Email : <span> example@gmail.com </span></p>
+                <p> Address : <span> Rampura,Dhaka </span></p>
+
+                <div class="social-media">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
